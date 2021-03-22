@@ -1,23 +1,50 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { useState } from 'react';
 import './App.css';
+import Home from './components/Home';
+import Nav from './components/Nav';
+import Store from './components/Store';
+import Cart from './components/Cart';
+import Details from './components/Details'
 
 function App() {
+  const [menOrWomen, setMenOrWomen] = useState('men');
+  const [detailsOpen, setDetailsOpen] = useState(-1);
+  const [cart, setCart] = useState([]);
+
+  const navElement = <Nav menOrWomen={menOrWomen} setMenOrWomen={setMenOrWomen} />
+  const cartSideBar = <Cart cart={cart} setCart={setCart} />
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Router>
+        <Switch>
+          <Route path='/info'>
+            {navElement}
+            {cartSideBar}
+          </Route>
+          <Route path='/faq'>
+            {navElement}
+            {cartSideBar}
+          </Route>
+          <Route path='/store'>
+            <Details
+              detailsOpen={detailsOpen}
+              setDetailsOpen={setDetailsOpen}
+              setCart={setCart}
+            />
+            {navElement}
+            {cartSideBar}
+            <Store
+              menOrWomen={menOrWomen}
+              setDetailsOpen={setDetailsOpen}
+            />
+          </Route>
+          <Route path='/' exact>
+            <Home setMenOrWomen={setMenOrWomen} />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

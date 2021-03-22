@@ -1,0 +1,76 @@
+{
+  "clothes": [
+    {
+      "id": 1,
+      "name": "Bluza z kapturem",
+      "img": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F43%2Fe5%2F43e5fb014a53eeb3dc6fcfea4eaa63b49d10c895.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_hoodiessweatshirts_hoodies%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+      "maleOrFemale": "men",
+      "price": 29.9,
+      "color": "beige"
+    },
+    {
+      "id": 2,
+      "name": "Dżinsy niebieskie",
+      "img": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F98%2Ff4%2F98f44705cfd07d26370478798f66153575cf0878.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_jeans%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/mobilefullscreen]",
+      "maleOrFemale": "men",
+      "price": 29.9,
+      "color": "beige"
+    },
+    {
+      "id": 3,
+      "name": "Dżinsy czarne",
+      "img": "https://media.gq.com/photos/5c49eca822b9ff10db79c30d/master/w_2000,h_1333,c_limit/GQ-Black-Jeans-American-Eagle-Slim-3x2.jpg",
+      "maleOrFemale": "men",
+      "price": 29.9,
+      "color": "beige"
+    },
+    {
+      "id": 4,
+      "name": "Bluza z kapturem",
+      "img": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F43%2Fe5%2F43e5fb014a53eeb3dc6fcfea4eaa63b49d10c895.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_hoodiessweatshirts_hoodies%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+      "maleOrFemale": "women",
+      "price": 29.9,
+      "color": "beige"
+    },
+    {
+      "id": 5,
+      "name": "Bluza z kapturem",
+      "img": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F43%2Fe5%2F43e5fb014a53eeb3dc6fcfea4eaa63b49d10c895.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_hoodiessweatshirts_hoodies%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+      "maleOrFemale": "women",
+      "price": 29.9,
+      "color": "beige"
+    },
+    {
+      "id": 6,
+      "name": "Bluza z kapturem",
+      "img": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F43%2Fe5%2F43e5fb014a53eeb3dc6fcfea4eaa63b49d10c895.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_hoodiessweatshirts_hoodies%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+      "maleOrFemale": "men",
+      "price": 29.9,
+      "color": "beige"
+    },
+    {
+      "id": 7,
+      "name": "Bluza z kapturem",
+      "img": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F43%2Fe5%2F43e5fb014a53eeb3dc6fcfea4eaa63b49d10c895.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_hoodiessweatshirts_hoodies%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+      "maleOrFemale": "men",
+      "price": 29.9,
+      "color": "beige"
+    },
+    {
+      "id": 8,
+      "name": "Bluza z kapturem",
+      "img": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F43%2Fe5%2F43e5fb014a53eeb3dc6fcfea4eaa63b49d10c895.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_hoodiessweatshirts_hoodies%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+      "maleOrFemale": "men",
+      "price": 29.9,
+      "color": "beige"
+    },
+    {
+      "id": 9,
+      "name": "Bluza z kapturem",
+      "img": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F43%2Fe5%2F43e5fb014a53eeb3dc6fcfea4eaa63b49d10c895.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_hoodiessweatshirts_hoodies%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+      "maleOrFemale": "men",
+      "price": 29.9,
+      "color": "beige"
+    }
+  ]
+}

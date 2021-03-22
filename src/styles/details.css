@@ -1,0 +1,60 @@
+/* details */
+:root {
+  --background: #f0efef;
+}
+
+.details-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(43, 43, 43, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+}
+
+.details-content {
+  background: var(--background);
+  width: 70%;
+  height: 70%;
+  position: relative;
+  display: flex;
+}
+
+.details-photo {
+  height: 100%;
+}
+
+.details-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.details-sizes {
+  display: flex;
+}
+
+.details-warning {
+  color: red;
+  margin-bottom: 20px;
+}
+
+.close-icon {
+  position: absolute;
+  right: 0%;
+  cursor: pointer;
+}
+
+.size-icon {
+  cursor: pointer;
+  margin: 40px 5px;
+}
+
+.size-icon:hover {
+  filter: brightness(80%);
+}

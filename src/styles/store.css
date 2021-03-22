@@ -1,0 +1,94 @@
+/* store */
+:root {
+  --yellow: #e9ff45;
+}
+
+.store {
+  position: relative;
+  width: 790px;
+  margin: 120px auto 0 auto;
+  z-index: 0;
+}
+
+.store-products {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-column: 3;
+  grid-template-columns: 250px 250px 250px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.store-card {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.store-card > img {
+  object-fit: cover;
+  width: 100%;
+  height: 280px;
+}
+
+.store-card-name,
+.store-card-price{
+  color: #929292;
+  padding: 5px 10px;
+}
+
+.store-card-name {
+  font-size: 13px;
+}
+
+.store-card-price {
+  font-size: 22px;
+}
+
+.store-details-button {
+  display: block;
+  margin: 15px auto;
+  padding: 7px 25px;
+  background: var(--yellow);
+  border: 5px solid black;
+  cursor: pointer;
+}
+
+.store-details-button:hover {
+  background: black;
+  color: var(--yellow);
+}
+
+.store-input-div {
+  position: relative;
+  width: 250px;
+  height: 44px;
+  line-height: 44px;
+  margin: 20px 0;
+}
+
+.store-input-div label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 10px;
+  color: #d3d3d3;
+  transition: 0.2s all;
+  cursor: text;
+  pointer-events: none;
+}
+
+.store-input-div input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 0.5rem 10px;
+  border-bottom: 2px;
+}
+
+input:focus~label {
+  font-size: 14px;
+  top: -24px;
+  color: black;
+}
