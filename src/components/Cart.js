@@ -40,6 +40,7 @@ const Cart = ({ cart, setCart }) => {
             handleRemoving={handleRemoving}
           />
         ))}
+        <button className='cart-button'>Zapłać</button>
       </div>
     </div>
   )

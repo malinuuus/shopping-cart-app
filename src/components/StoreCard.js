@@ -5,7 +5,7 @@ const StoreCard = ({ product, setDetailsOpen }) => {
 
   return (
     <div className='store-card'>
-      <img src={img} />
+      <img src={img} alt={`${name}-img`} />
       <p className='store-card-name'>{name}</p>
       <p className='store-card-price'>{price.toFixed(2)} pln</p>
       <button

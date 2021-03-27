@@ -53,7 +53,11 @@ const Details = ({ detailsOpen, setDetailsOpen, setCart }) => {
   (
     <section className='details-background'>
       <div className='details-content' ref={wrapperRef}>
-        <img className='details-photo' src={product.img} />
+        <img
+          className='details-photo'
+          src={product.img}
+          alt={`${product.name}-img`}
+        />
         <div className='details-info'>
           <h2>{product.name}</h2>
           <p>{product.price.toFixed(2)} pln</p>

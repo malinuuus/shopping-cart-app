@@ -13,7 +13,7 @@ const CartElement = ({ product, index, handleRemoving }) => {
       onMouseEnter={() => setRemoveButton(true)}
       onMouseLeave={() => setRemoveButton(false)}
     >
-      <img src={img}/>
+      <img src={img} alt={`${name}-img`}/>
       <div className='cart-element-details'>
         <p>{name}</p>
         <p>{price} pln</p>

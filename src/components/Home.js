@@ -13,7 +13,7 @@ const Home = ({ setMenOrWomen }) => {
         onClick={() => setMenOrWomen('men')}
       >
         <div className='link-content'>
-          <img src={manPic} />
+          <img src={manPic} alt='men'/>
           <p>MEN</p>
         </div>
       </Link>
@@ -23,7 +23,7 @@ const Home = ({ setMenOrWomen }) => {
         onClick={() => setMenOrWomen('women')}
       >
         <div className='link-content'>
-          <img src={womanPic} />
+          <img src={womanPic} alt='women' />
           <p>WOMEN</p>
         </div>
       </Link>

@@ -5,7 +5,7 @@ import '../styles/store.css';
 
 const Store = ({ menOrWomen, setDetailsOpen }) => {
   const [query, setQuery] = useState('');
-  const [filtered, setFiltered] = useState(data.clothes);
+  //const [filtered, setFiltered] = useState(data.clothes);
 
   const handleChange = e => {
     setQuery(e.target.value);

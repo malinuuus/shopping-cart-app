@@ -45,6 +45,33 @@
   right: 0;
   background: black;
   padding: 20px;
+  overflow-y: scroll;
+}
+
+.cart-content::-webkit-scrollbar {
+  width: 10px;
+}
+
+.cart-content::-webkit-scrollbar-thumb {
+  background: var(--yellow);
+}
+
+.cart-button {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  cursor: pointer;
+  background: black;
+  color: white;
+  border: 2px solid var(--yellow);
+  transition: .2s linear all;
+  font-size: 20px;
+}
+
+.cart-button:hover {
+  border: 2px solid black;
+  background: var(--yellow);
+  color: black;
 }
 
 .cart-element {
@@ -62,6 +89,8 @@
 
 .cart-element > img {
   width: 90px;
+  height: 150px;
+  object-fit: cover;
 }
 
 .cart-element-details {
@@ -76,11 +105,9 @@
 
 .cart-element-details > p:nth-child(2),
 .cart-element-details > p:nth-child(3) {
-  font-size: 20px;
+  font-size: 18px;
   color: #929292;
 }
-
-.cart
 
 .cart-element-remove {
   height: 30px;
