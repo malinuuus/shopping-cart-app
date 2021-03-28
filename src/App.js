@@ -1,11 +1,13 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { useState } from 'react';
 import './App.css';
+
 import Home from './components/Home';
 import Nav from './components/Nav';
 import Store from './components/Store';
 import Cart from './components/Cart';
 import Details from './components/Details'
+import Info from './components/Info';
 
 function App() {
   const [menOrWomen, setMenOrWomen] = useState('men');
@@ -22,10 +24,12 @@ function App() {
           <Route path='/info'>
             {navElement}
             {cartSideBar}
+            <Info page='info' />
           </Route>
           <Route path='/faq'>
             {navElement}
             {cartSideBar}
+            <Info path='faq' />
           </Route>
           <Route path='/store'>
             <Details

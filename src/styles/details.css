@@ -1,6 +1,9 @@
 /* details */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
 :root {
   --background: #f0efef;
+  --font: 'Lato', sans-serif;
 }
 
 .details-background {
@@ -22,10 +25,13 @@
   height: 70%;
   position: relative;
   display: flex;
+  font-family: var(--font);
 }
 
 .details-photo {
   height: 100%;
+  width: 30%;
+  object-fit: cover;
 }
 
 .details-info {
@@ -33,6 +39,16 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-top: 5%;
+}
+
+.details-info > h2 {
+  font-size: 30px;
+}
+
+.details-info > p {
+  font-size: 22px;
+  margin-top: 10px;
 }
 
 .details-sizes {
@@ -42,6 +58,17 @@
 .details-warning {
   color: red;
   margin-bottom: 20px;
+}
+
+.details-button {
+  font-family: inherit;
+  padding: 7px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.details-button:hover {
+  background: #dfdfdf;
 }
 
 .close-icon {

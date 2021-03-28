@@ -1,7 +1,10 @@
 /* nav */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
 :root {
   --yellow: #e9ff45;
   --background: #f0efef;
+  --font: 'Lato', sans-serif;
 }
 
 .nav {
@@ -13,6 +16,7 @@
   align-items: center;
   z-index: 1;
   position: fixed;
+  font-family: var(--font);
 }
 
 .nav-toggle {
@@ -31,6 +35,8 @@
   display: inline;
   font-size: 25px;
   border: 0;
+  font-family: var(--font);
+  font-weight: bolder;
 }
 
 .nav-toggle button {

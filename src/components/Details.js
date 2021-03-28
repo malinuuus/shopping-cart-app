@@ -16,6 +16,7 @@ const Details = ({ detailsOpen, setDetailsOpen, setCart }) => {
     setWarning(false);
   };
 
+  //kliknięcie poza komponentem
   const useOutsideAlerter = ref => {
     useEffect(() => {
       const handleClickOutside = e => {
@@ -35,11 +36,13 @@ const Details = ({ detailsOpen, setDetailsOpen, setCart }) => {
   const wrapperRef = useRef(null);
   useOutsideAlerter(wrapperRef);
 
+  //zaznaczenie rozmiaru
   const handleSelecting = size => {
     setSelected(size);
     if(warning) setWarning(false);
   }
 
+  //dodanie do koszyka
   const handleAdding = () => {
     if (selected !== null) {
       setCart(state => [...state, {...product, selected}]);
@@ -76,9 +79,14 @@ const Details = ({ detailsOpen, setDetailsOpen, setCart }) => {
             className='details-warning'
             style={warning ? {opacity: 1} : {opacity: 0, pointerEvents: 'none'}}
           >
-            Choose a size
+            Wybierz rozmiar
           </p>
-          <button onClick={handleAdding}>Add to the cart</button>
+          <button
+            onClick={handleAdding}
+            className='details-button'
+          >
+            Dodaj do wózka
+          </button>
         </div>
         <CloseIcon
           className='close-icon'

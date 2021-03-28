@@ -12,20 +12,20 @@ const Nav = ({ menOrWomen, setMenOrWomen }) => {
           style={menOrWomen === 'men' ? null : yellowFont}
           onClick={() => setMenOrWomen('men')}
         >
-          MEN
+          ON
         </button>
         <p>\</p>
         <button
           style={menOrWomen === 'men' ? yellowFont : null}
           onClick={() => setMenOrWomen('women')}
         >
-          WOMEN
+          ONA
         </button>
       </div>
       <div className='nav-menu'>
         <ul>
           <li>
-            <Link to='/store' className='menu-link' >Store</Link>
+            <Link to='/store' className='menu-link' >Sklep</Link>
           </li>
           <li>
             <Link to='/info' className='menu-link' >Info</Link>

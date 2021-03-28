@@ -5,8 +5,8 @@ import '../styles/store.css';
 
 const Store = ({ menOrWomen, setDetailsOpen }) => {
   const [query, setQuery] = useState('');
-  //const [filtered, setFiltered] = useState(data.clothes);
 
+  //zmiana wartosci inputa
   const handleChange = e => {
     setQuery(e.target.value);
   }
@@ -20,7 +20,12 @@ const Store = ({ menOrWomen, setDetailsOpen }) => {
           value={query}
           onChange={handleChange}
         />
-        <label htmlFor='name'>Search for...</label>
+        <label
+          htmlFor='query'
+          style={query !== '' ? {top: '-24px'} : null}
+        >
+          Szukaj...
+        </label>
       </div>
       <div className='store-products'>
           {data.clothes

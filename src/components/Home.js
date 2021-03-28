@@ -14,7 +14,7 @@ const Home = ({ setMenOrWomen }) => {
       >
         <div className='link-content'>
           <img src={manPic} alt='men'/>
-          <p>MEN</p>
+          <p>ON</p>
         </div>
       </Link>
       <div className='mid-stripe'></div>
@@ -24,7 +24,7 @@ const Home = ({ setMenOrWomen }) => {
       >
         <div className='link-content'>
           <img src={womanPic} alt='women' />
-          <p>WOMEN</p>
+          <p>ONA</p>
         </div>
       </Link>
     </div>

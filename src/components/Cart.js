@@ -9,6 +9,7 @@ const Cart = ({ cart, setCart }) => {
   const closeStyle = {transform: 'translateX(82%)'};
   const cartLength = cart.length;
 
+  //usuwanie elementu
   const handleRemoving = index => {
     const newCart = [...cart];
     newCart.splice(index, 1);
@@ -40,7 +41,9 @@ const Cart = ({ cart, setCart }) => {
             handleRemoving={handleRemoving}
           />
         ))}
-        <button className='cart-button'>Zapłać</button>
+        {cartLength !== 0 ? (
+          <button className='cart-button'>Zapłać</button>
+        ) : null}
       </div>
     </div>
   )

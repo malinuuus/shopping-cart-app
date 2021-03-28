@@ -12,7 +12,7 @@ const StoreCard = ({ product, setDetailsOpen }) => {
         className='store-details-button'
         onClick={() => setDetailsOpen(id)}
       >
-        Show details
+        Pokaż szczegóły
       </button>
     </div>
   )

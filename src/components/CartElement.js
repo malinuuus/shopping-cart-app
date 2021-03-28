@@ -24,7 +24,7 @@ const CartElement = ({ product, index, handleRemoving }) => {
           className='cart-element-remove'
           onClick={() => handleRemoving(index)}
         >
-          <RemoveIcon className='cart-element-icon' />
+          <RemoveIcon titleAccess='usuń' className='cart-element-icon' />
         </button>
       ) : null}
     </div>
