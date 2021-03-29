@@ -1,4 +1,6 @@
 /* cart */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
 :root {
   --yellow: #e9ff45;
 }
@@ -66,6 +68,7 @@
   border: 2px solid var(--yellow);
   transition: .2s linear all;
   font-size: 20px;
+  font-family: 'Lato', sans-serif;
 }
 
 .cart-button:hover {
@@ -101,6 +104,7 @@
 .cart-element-details > p {
   text-align: center;
   margin-bottom: 5px;
+  font-family: 'Lato', sans-serif;
 }
 
 .cart-element-details > p:nth-child(2),
