@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import { MyContext } from '../context';
 import StoreCard from './StoreCard';
 import data from '../data.json';
 import '../styles/store.css';
 
-const Store = ({ menOrWomen, setDetailsOpen }) => {
+const Store = () => {
+  const { menOrWomen } = useContext(MyContext);
   const [query, setQuery] = useState('');
 
   //zmiana wartosci inputa
@@ -35,7 +37,6 @@ const Store = ({ menOrWomen, setDetailsOpen }) => {
               <StoreCard
                 key={`${elem.name}${i}`}
                 product={elem}
-                setDetailsOpen={setDetailsOpen}
               />
           ))}
       </div>

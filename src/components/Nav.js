@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { MyContext } from '../context';
 import { Link } from 'react-router-dom';
 import '../styles/nav.css'
 
-const Nav = ({ menOrWomen, setMenOrWomen }) => {
+const Nav = () => {
+  const {menOrWomen, setMenOrWomen} = useContext(MyContext);
   const yellowFont = {color: '#dff542'}
 
   return (
@@ -25,13 +27,13 @@ const Nav = ({ menOrWomen, setMenOrWomen }) => {
       <div className='nav-menu'>
         <ul>
           <li>
-            <Link to='/store' className='menu-link' >Sklep</Link>
+            <Link to='store' className='menu-link' >Sklep</Link>
           </li>
           <li>
-            <Link to='/info' className='menu-link' >Info</Link>
+            <Link to='info' className='menu-link' >Info</Link>
           </li>
           <li>
-            <Link to='/faq' className='menu-link' >FAQ</Link>
+            <Link to='faq' className='menu-link' >FAQ</Link>
           </li>
         </ul>
       </div>

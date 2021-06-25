@@ -9,7 +9,7 @@ const Home = ({ setMenOrWomen }) => {
   return (
     <div className='home-page'>
       <Link
-        to='/store'
+        to='projekt/store'
         onClick={() => setMenOrWomen('men')}
       >
         <div className='link-content'>
@@ -19,7 +19,7 @@ const Home = ({ setMenOrWomen }) => {
       </Link>
       <div className='mid-stripe'></div>
       <Link
-        to='/store'
+        to='projekt/store'
         onClick={() => setMenOrWomen('women')}
       >
         <div className='link-content'>

@@ -1,10 +1,13 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import { MyContext } from '../context';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import { Avatar } from '@material-ui/core';
 import CartElement from './CartElement';
 import '../styles/cart.css';
 
-const Cart = ({ cart, setCart }) => {
+const Cart = () => {
+  const {cart, setCart} = useContext(MyContext);
+
   const [cartOpen, setCartOpen] = useState(false);
   const closeStyle = {transform: 'translateX(82%)'};
   const cartLength = cart.length;

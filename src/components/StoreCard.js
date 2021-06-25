@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { MyContext } from '../context';
 
-const StoreCard = ({ product, setDetailsOpen }) => {
-  const { img, name, id, price } = product;
+const StoreCard = ({ product: { img, name, id, price } }) => {
+  const { setDetailsOpen } = useContext(MyContext);
 
   return (
     <div className='store-card'>

@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { useState } from 'react';
+import React, { useState } from 'react';
+import {MyContext} from './context';
 import './App.css';
 
 import Home from './components/Home';
@@ -9,47 +10,39 @@ import Cart from './components/Cart';
 import Details from './components/Details'
 import Info from './components/Info';
 
+
 function App() {
   const [menOrWomen, setMenOrWomen] = useState('men');
   const [detailsOpen, setDetailsOpen] = useState(-1);
   const [cart, setCart] = useState([]);
 
-  const navElement = <Nav menOrWomen={menOrWomen} setMenOrWomen={setMenOrWomen} />
-  const cartSideBar = <Cart cart={cart} setCart={setCart} />
 
   return (
-    <div className='App'>
+    <MyContext.Provider value={{ menOrWomen, setMenOrWomen, detailsOpen, setDetailsOpen, cart, setCart }} className='App'>
       <Router>
         <Switch>
-          <Route path='/info'>
-            {navElement}
-            {cartSideBar}
+          <Route path='/projekt/info'>
+            <Nav />
+            <Cart />
             <Info page='info' />
           </Route>
-          <Route path='/faq'>
-            {navElement}
-            {cartSideBar}
-            <Info path='faq' />
+          <Route path='/projekt/faq'>
+            <Nav />
+            <Cart />
+            <Info page='faq' />
           </Route>
-          <Route path='/store'>
-            <Details
-              detailsOpen={detailsOpen}
-              setDetailsOpen={setDetailsOpen}
-              setCart={setCart}
-            />
-            {navElement}
-            {cartSideBar}
-            <Store
-              menOrWomen={menOrWomen}
-              setDetailsOpen={setDetailsOpen}
-            />
+          <Route path='/projekt/store'>
+            <Details />
+            <Nav />
+            <Cart />
+            <Store />
           </Route>
           <Route path='/projekt' exact>
             <Home setMenOrWomen={setMenOrWomen} />
           </Route>
         </Switch>
       </Router>
-    </div>
+    </MyContext.Provider>
   );
 }
 

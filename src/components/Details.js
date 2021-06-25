@@ -1,10 +1,12 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, useContext } from 'react';
+import { MyContext } from '../context';
 import data from '../data.json';
 import { Avatar } from '@material-ui/core';
 import CloseIcon from '@material-ui/icons/Close';
 import '../styles/details.css';
 
-const Details = ({ detailsOpen, setDetailsOpen, setCart }) => {
+const Details = () => {
+  const { detailsOpen, setDetailsOpen, setCart } = useContext(MyContext);
   const product = data.clothes.filter(elem => elem.id === detailsOpen)[0];
   const sizes = ['XS', 'S', 'M', 'L', 'XL'];
   const [selected, setSelected] = useState(null);
