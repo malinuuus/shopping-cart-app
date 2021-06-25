@@ -45,7 +45,7 @@ function App() {
             <Cart />
             <Store />
           </Route>
-          <Route path='/' exact>
+          <Route path='/projekt' exact>
             <Home setMenOrWomen={setMenOrWomen} />
           </Route>
         </Switch>

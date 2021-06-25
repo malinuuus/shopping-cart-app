@@ -27,17 +27,17 @@ const Nav = () => {
       <div className='nav-menu'>
         <ul>
           <li>
-            <Link to='store' className='menu-link'>
+            <Link to='/projekt/store' className='menu-link'>
               Sklep
             </Link>
           </li>
           <li>
-            <Link to='info' className='menu-link'>
+            <Link to='/projekt/info' className='menu-link'>
               Info
             </Link>
           </li>
           <li>
-            <Link to='faq' className='menu-link'>
+            <Link to='/projekt/faq' className='menu-link'>
               FAQ
             </Link>
           </li>
