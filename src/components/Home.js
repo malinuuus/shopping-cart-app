@@ -8,14 +8,14 @@ import '../styles/home.css';
 const Home = ({ setMenOrWomen }) => {
   return (
     <div className='home-page'>
-      <Link to='store' onClick={() => setMenOrWomen('men')}>
+      <Link to='/projekt/store' onClick={() => setMenOrWomen('men')}>
         <div className='link-content'>
           <img src={manPic} alt='men' />
           <p>ON</p>
         </div>
       </Link>
       <div className='mid-stripe'></div>
-      <Link to='store' onClick={() => setMenOrWomen('women')}>
+      <Link to='/projekt/store' onClick={() => setMenOrWomen('women')}>
         <div className='link-content'>
           <img src={womanPic} alt='women' />
           <p>ONA</p>
