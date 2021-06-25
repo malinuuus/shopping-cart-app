@@ -9,9 +9,9 @@ const Store = () => {
   const [query, setQuery] = useState('');
 
   //zmiana wartosci inputa
-  const handleChange = e => {
+  const handleChange = (e) => {
     setQuery(e.target.value);
-  }
+  };
 
   return (
     <div className='store'>
@@ -22,26 +22,22 @@ const Store = () => {
           value={query}
           onChange={handleChange}
         />
-        <label
-          htmlFor='query'
-          style={query !== '' ? {top: '-24px'} : null}
-        >
+        <label htmlFor='query' style={query !== '' ? { top: '-24px' } : null}>
           Szukaj...
         </label>
       </div>
       <div className='store-products'>
-          {data.clothes
-            .filter(elem => elem.maleOrFemale === menOrWomen)
-            .filter(elem => elem.name.toLowerCase().includes(query.toLowerCase()))
-            .map((elem, i) => (
-              <StoreCard
-                key={`${elem.name}${i}`}
-                product={elem}
-              />
+        {data.clothes
+          .filter((elem) => elem.maleOrFemale === menOrWomen)
+          .filter((elem) =>
+            elem.name.toLowerCase().includes(query.toLowerCase())
+          )
+          .map((elem, i) => (
+            <StoreCard key={`${elem.name}${i}`} product={elem} />
           ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Store;

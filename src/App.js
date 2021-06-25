@@ -1,24 +1,32 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import React, { useState } from 'react';
-import {MyContext} from './context';
+import { MyContext } from './context';
 import './App.css';
 
 import Home from './components/Home';
 import Nav from './components/Nav';
 import Store from './components/Store';
 import Cart from './components/Cart';
-import Details from './components/Details'
+import Details from './components/Details';
 import Info from './components/Info';
-
 
 function App() {
   const [menOrWomen, setMenOrWomen] = useState('men');
   const [detailsOpen, setDetailsOpen] = useState(-1);
   const [cart, setCart] = useState([]);
 
-
   return (
-    <MyContext.Provider value={{ menOrWomen, setMenOrWomen, detailsOpen, setDetailsOpen, cart, setCart }} className='App'>
+    <MyContext.Provider
+      value={{
+        menOrWomen,
+        setMenOrWomen,
+        detailsOpen,
+        setDetailsOpen,
+        cart,
+        setCart
+      }}
+      className='App'
+    >
       <Router>
         <Switch>
           <Route path='/projekt/info'>
@@ -37,7 +45,7 @@ function App() {
             <Cart />
             <Store />
           </Route>
-          <Route path='/projekt' exact>
+          <Route path='/' exact>
             <Home setMenOrWomen={setMenOrWomen} />
           </Route>
         </Switch>

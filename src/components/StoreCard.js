@@ -16,7 +16,7 @@ const StoreCard = ({ product: { img, name, id, price } }) => {
         Pokaż szczegóły
       </button>
     </div>
-  )
-}
+  );
+};
 
 export default StoreCard;

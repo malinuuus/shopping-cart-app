@@ -6,29 +6,26 @@ import CartElement from './CartElement';
 import '../styles/cart.css';
 
 const Cart = () => {
-  const {cart, setCart} = useContext(MyContext);
+  const { cart, setCart } = useContext(MyContext);
 
   const [cartOpen, setCartOpen] = useState(false);
-  const closeStyle = {transform: 'translateX(82%)'};
+  const closeStyle = { transform: 'translateX(82%)' };
   const cartLength = cart.length;
 
   //usuwanie elementu
-  const handleRemoving = index => {
+  const handleRemoving = (index) => {
     const newCart = [...cart];
     newCart.splice(index, 1);
     setCart(newCart);
-  }
-  
+  };
+
   return (
-    <div
-      className='cart'
-      style={cartOpen ? null : closeStyle}
-    >
+    <div className='cart' style={cartOpen ? null : closeStyle}>
       <div className='cart-stripe'>
         <div className='cart-icon'>
           <ShoppingCartIcon
             className='cart-icon'
-            style={{fontSize: '50px'}}
+            style={{ fontSize: '50px' }}
             onClick={() => setCartOpen(!cartOpen)}
           />
           {cartLength !== 0 ? (
@@ -49,7 +46,7 @@ const Cart = () => {
         ) : null}
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Cart;

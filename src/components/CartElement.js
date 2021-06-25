@@ -3,7 +3,7 @@ import RemoveCircleOutlineIcon from '@material-ui/icons/RemoveCircleOutline';
 
 const CartElement = ({ product, index, handleRemoving }) => {
   const size = product.selected;
-  const {img, name, price} = product;
+  const { img, name, price } = product;
   const [removeButton, setRemoveButton] = useState(false);
   const RemoveIcon = RemoveCircleOutlineIcon;
 
@@ -13,7 +13,7 @@ const CartElement = ({ product, index, handleRemoving }) => {
       onMouseEnter={() => setRemoveButton(true)}
       onMouseLeave={() => setRemoveButton(false)}
     >
-      <img src={img} alt={`${name}-img`}/>
+      <img src={img} alt={`${name}-img`} />
       <div className='cart-element-details'>
         <p>{name}</p>
         <p>{price} pln</p>
@@ -28,7 +28,7 @@ const CartElement = ({ product, index, handleRemoving }) => {
         </button>
       ) : null}
     </div>
-  )
-}
+  );
+};
 
-export default CartElement
+export default CartElement;
