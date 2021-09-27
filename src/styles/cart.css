@@ -40,7 +40,7 @@
 }
 
 .cart-content {
-  width: 82%;
+  width: 84%;
   height: 100%;
   position: absolute;
   top: 0;
@@ -127,4 +127,14 @@
 
 .cart-element-icon {
   color: red;
+}
+
+@media only screen and (max-width: 600px) {
+  .cart {
+    width: 100vw;
+  }
+
+  .cart-stripe {
+    width: 16%;
+  }
 }

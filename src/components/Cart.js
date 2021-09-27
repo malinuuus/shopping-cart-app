@@ -9,7 +9,7 @@ const Cart = () => {
   const { cart, setCart } = useContext(MyContext);
 
   const [cartOpen, setCartOpen] = useState(false);
-  const closeStyle = { transform: 'translateX(82%)' };
+  const closeStyle = { transform: 'translateX(84%)' };
   const cartLength = cart.length;
 
   //usuwanie elementu

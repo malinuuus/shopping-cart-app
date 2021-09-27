@@ -73,3 +73,27 @@
 .menu-link:hover {
   color: var(--yellow);
 }
+
+@media only screen and (max-width: 600px) {
+  .nav {
+    height: 80px;
+  }
+
+  .nav-toggle {
+    width: 100px;
+    height: 50px;
+  }
+
+  .nav-toggle button,
+  .nav-toggle p {
+    font-size: 14px;
+  }
+
+  .nav-menu {
+    left: 0;
+  }
+
+  .menu-link {
+    padding: 10px 20px;
+  }
+}
