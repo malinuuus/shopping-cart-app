@@ -29,23 +29,23 @@ function App() {
     >
       <Router>
         <Switch>
-          <Route path='/projekt/info'>
+          <Route path='/shopping-cart-app/info'>
             <Nav />
             <Cart />
             <Info page='info' />
           </Route>
-          <Route path='/projekt/faq'>
+          <Route path='/shopping-cart-app/faq'>
             <Nav />
             <Cart />
             <Info page='faq' />
           </Route>
-          <Route path='/projekt/store'>
+          <Route path='/shopping-cart-app/store'>
             <Details />
             <Nav />
             <Cart />
             <Store />
           </Route>
-          <Route path='/projekt' exact>
+          <Route path='/shopping-cart-app' exact>
             <Home setMenOrWomen={setMenOrWomen} />
           </Route>
         </Switch>
